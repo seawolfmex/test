@@ -1,0 +1,11 @@
+propel:
+  catalog:
+    id:           ~
+    name:         { type: varchar(255), required: true, index: unique }
+ 
+  product:
+    id:           ~
+    catalog_id:  { type: integer, foreignTable: catalog, foreignReference: id, required: true, onDelete: CASCADE }
+    name:         { type: varchar(255) }
+
+ 

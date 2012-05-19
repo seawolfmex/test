@@ -1,0 +1,7 @@
+TestProduct:
+# Starts at the beginning of the line (no whitespace before)
+<?php for ($i = 1; $i <= 10; $i++): ?>
+  job_<?php echo $i ?>:
+    catalog_id:  catalog_1
+    name:      Product <?php echo $i."\n" ?>
+<?php endfor ?>
